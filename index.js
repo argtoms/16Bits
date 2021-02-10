@@ -10,6 +10,35 @@ client.on('ready', () => {
     command(client, ['ping', 'test'], (message) => {
         message.channel.send('Pong!')
     })
+
+    command(client, 'servers', (message) => {
+        client.guilds.cache.forEach((guild) => {
+            message.channel.send(
+                `${guild.name} Has A Total Of ${guild.memberCount} Members..`
+            )
+        })
+    })
+
+    command(client, ['cc', 'clearchannel'], (message) => {
+        if (message.member.hasPermission('ADMINISTRATOR')) {
+            message.channel.messages.fetch().then((results) => {
+                message.channel.bulkDelete(results)
+            })
+        }
+    })
+
+    command(client, 'status', message => {
+        if (message.member.hasPermission('ADMINISTRATOR')) {
+            const content = message.content.replace('p!status ', '')
+
+            client.user.setPresence({
+                activity: {
+                    name: content,
+                    type: 0,
+                },
+            })
+        }
+    })
 })
 
 client.login(config.token)
