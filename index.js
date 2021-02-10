@@ -3,6 +3,7 @@ const client = new Discord.Client()
 
 const config = require('./config.json')
 const command = require('./command')
+const privateMessage = require('./private-message')
 
 client.on('ready', () => {
     console.log('PixelBot Is Online And Ready!')
@@ -39,6 +40,8 @@ client.on('ready', () => {
             })
         }
     })
+
+    privateMessage(client, 'ping', 'Pong!')
 })
 
 client.login(config.token)
