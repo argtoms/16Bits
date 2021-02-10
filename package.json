@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pixdevgithub/PixelBot/issues"
   },
-  "homepage": "https://github.com/pixdevgithub/PixelBot#readme"
+  "homepage": "https://github.com/pixdevgithub/PixelBot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
 }
