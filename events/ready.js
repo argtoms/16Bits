@@ -11,7 +11,6 @@ module.exports = async (client) => {
     { msg: "the haters hate", type: "WATCHING" },
     { msg: "you (turn around)", type: "WATCHING" },
     { msg: "grass grow", type: "WATCHING" },
-    { msg: `over ${client.guilds.cache.size} servers`, type: "WATCHING" },
     { msg: "funny cat videos", type: "WATCHING" },
     {
       msg: "Déjà vu Watching Déjà vu Watching Déjà vu Watching Déjà vu",
@@ -20,7 +19,10 @@ module.exports = async (client) => {
     { msg: "the world crumble", type: "WATCHING" },
     { msg: "over you from above 👼", type: "WATCHING" },
     { msg: "your conversations", type: "LISTENING" },
+    { msg: "Sahal Code Me", type: "WATCHING" },
+    { msg: "pixdev.gq", type: "PLAYING" }
   ];
+
 
   setInterval(async () => {
     const index = Math.floor(Math.random() * statusList.length + 1) - 1;
