@@ -16,3 +16,6 @@ config.js
 
 # ZIP File(s) Which We Use To Upload Our Bot Files Easily To Hosting Servers
 botfiles.zip
+
+# umm 😳
+lib/swearwords.txt
