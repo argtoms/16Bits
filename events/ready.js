@@ -20,6 +20,7 @@ module.exports = async (client) => {
     { msg: "the world crumble", type: "WATCHING" },
     { msg: "over you from above 👼", type: "WATCHING" },
     { msg: "your conversations", type: "LISTENING" },
+    { msg: "Sahal Code Me", type: "WATCHING" },
   ];
 
   setInterval(async () => {
@@ -49,9 +50,9 @@ module.exports = async (client) => {
     client.logger.log(`Running on Node ${process.version.replace(" ", "")}`, "ready");
     client.logger.log(`Running Discord.js v${require("discord.js").version.replace(" ", "")}`, "ready");
 
-    client.logger.log("Running Tsuyo v1.1 | https://github.com/VenkSociety/Tsuyo");
+    client.logger.log("Running Pixel v1.0 | https://github.com/pixdevgithub/PixelBot");
     client.startuptime = new Date().getTime() - client.starttime;
-    client.logger.log("It took " + client.startuptime + "ms to start Tsuyo.");
+    client.logger.log("It took " + client.startuptime + "ms to start Pixel.");
 
     // Starts the web server/API
     // If dashboard is disabled, skip starting web server

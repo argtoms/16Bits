@@ -20,9 +20,6 @@ module.exports = async (client, message) => {
       .setColor(colors.default)
       .setThumbnail('https://cdn.discordapp.com/avatars/492871769485475840/6164d0068b8e76e497af9b0e1746f671.png?size=2048')
       .addField('Commands', `Commands can be found by typing \`${settings.prefix}commands\`.`)
-      .addField('Want to invite me to your Discord?', '[Click here to invite me to your server.](https://discordapp.com/oauth2/authorize?client_id=492871769485475840&scope=bot&permissions=1506142455)')
-      .addField('Need more assistance?', '[Click here to join the official Tsuyo support server](https://discord.gg/3hbeQgY)')
-
       if (message.guild !== null) {
         if (!message.channel.permissionsFor(client.user).has('SEND_MESSAGES')) return
         return message.channel.send(embed)

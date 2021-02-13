@@ -1,7 +1,7 @@
 {
-  "name": "Tsuyo",
+  "name": "pixelbot",
   "version": "1.0.0",
-  "description": "A multipurpose bot to handle all your needs.",
+  "description": "PixelBot Is A Highly Modified & Customized Version Of Tsuyo Bot Made Using Discord.js For pixelDev's Discord Server! ",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
@@ -18,8 +18,8 @@
   "engines": {
     "node": "12.x"
   },
-  "repository": "github:VenkSociety/Tsuyo",
-  "author": "Venk#2020",
+  "repository": "github:pixdevgithub/PixelBot",
+  "author": "SahalDev",
   "license": "MIT",
   "dependencies": {
     "better-sqlite-pool": "^0.3.0",
@@ -64,8 +64,8 @@
     "nodemon": "^2.0.6"
   },
   "bugs": {
-    "url": "https://github.com/VenkSociety/Tsuyo/issues"
+    "url": "https://github.com/pixdevgithub/PixelBot/issues"
   },
-  "homepage": "https://github.com/VenkSociety/Tsuyo",
+  "homepage": "https://github.com/pixdevgithub/PixelBot",
   "snyk": true
 }
