@@ -10,6 +10,14 @@ client.on('ready', () => {
     command(client, ['ping', 'test'], (message) => {
         message.channel.send('Pong!')
     })
+
+    command(client, 'servercount', (message) => {
+        client.guilds.cache.forEach((guild) => {
+            message.channel.send(
+                `${guild.name} Has A Total Of ${guild.memberCount} Members`
+            )
+        })
+    })
 })
 
 client.login(config.token)
