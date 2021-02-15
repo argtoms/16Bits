@@ -1,0 +1,26 @@
+{
+  "name": "16bits",
+  "version": "1.0.0",
+  "description": "A Discord Bot Made By Sahal For The pixelDev Discord Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixdevgithub/16Bits.git"
+  },
+  "keywords": [
+    "16bits",
+    "16"
+  ],
+  "author": "SahalDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixdevgithub/16Bits/issues"
+  },
+  "homepage": "https://github.com/pixdevgithub/16Bits#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
