@@ -4,9 +4,7 @@
 
 The Bot Uses:
 
-[`Discord.js`](https://discord.js.org/#/) : Library Used To Interact With Discord's Bot API
 
-[`Node.js`](https://nodejs.org/) : To Run The Bot
 
 # A Note To People Who Want To Self Host 16Bits
 
