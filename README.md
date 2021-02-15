@@ -18,7 +18,7 @@ If You Really Really Want To Self Host This Bot, We Won't Be Giving You Any Help
 
 Your Contributions Are Welcome :)
 
-Read [CONTRIBUTING.md]()
+Read [CONTRIBUTING.md]() For More On Contributions
 
 # Maintainers
 
