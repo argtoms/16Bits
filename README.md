@@ -4,7 +4,9 @@
 
 The Bot Uses:
 
+[`Discord.js`](discord.js.org/) - Used To Interact With Discord API Very Easily
 
+[`Node.js`](https://nodejs.org/) And [`Yarn`](https://classic.yarnpkg.com/en/) - Runtime Engine For Running The Bot
 
 # A Note To People Who Want To Self Host 16Bits
 
