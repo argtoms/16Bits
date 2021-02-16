@@ -32,7 +32,7 @@ If You Really Really Want To Self Host This Bot, We Won't Be Giving You Any Help
 
 Your Contributions Are Welcome :)
 
-Read [CONTRIBUTING.md]() For More On Contributions
+Read [CONTRIBUTING.md](https://github.com/pixdevgithub/16Bits/blob/main/.github/CONTRIBUTING.md) For More On Contributions
 
 # Maintainers
 
