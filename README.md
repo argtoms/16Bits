@@ -1,6 +1,10 @@
 # <div align="center">**_16Bits_**
+    
+<div align="center">
+    
+<img src="https://github.com/pixdevgithub/16Bits/blob/main/image/e.png" height="450px" width="450px" />
 
-<img src="https://github.com/pixdevgithub/16Bits/blob/main/image/e.png" height="450px" width="450px" align="middle" />
+</div>
 
 <div align="center">
 
