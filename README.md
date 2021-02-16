@@ -1,4 +1,18 @@
-# 16Bits
+# <div align="center">**_16Bits_**
+
+<div align="center">
+
+![Logo Image](https://i.imgur.com/ftOEreq.png)
+
+</div>
+
+<div align="center">
+
+<a href="https://discord.gg/syPv4ezZEM/">
+    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
+</a>
+
+</div>
 
 16Bits Is A Discord Bot Made By [Sahal](https://github.com/SahalDev) For pixelDev's [Discord Server](https://discord.gg/syPv4ezZEM)
 
