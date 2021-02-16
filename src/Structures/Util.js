@@ -20,14 +20,14 @@ module.exports = class Util {
 	}
 
 	async loadCommands() {
-		return glob(`${this.directory}commands/**/*.js`).then(commands => {
+		return glob(`${this.directory}Commands/**/*.js`).then(commands => {
 			for (const commandFile of commands) {
 				delete require.cache[commandFile];
 				const { name } = path.parse(commandFile);
 				const File = require(commandFile);
-				if (!this.isClass(File)) throw new TypeError(`Command ${name} doesn't export a class.`);
+				if (!this.isClass(File)) throw new TypeError(`Command ${name} Doesn't Export A Class.`);
 				const command = new File(this.client, name.toLowerCase());
-				if (!(command instanceof Command)) throw new TypeError(`Comamnd ${name} doesnt belong in Commands.`);
+				if (!(command instanceof Command)) throw new TypeError(`Comamnd ${name} Doesn't Belong In Commands.`);
 				this.client.commands.set(command.name, command);
 				if (command.aliases.length) {
 					for (const alias of command.aliases) {

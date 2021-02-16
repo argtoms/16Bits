@@ -16,7 +16,7 @@ module.exports = class SixteenClient extends Client {
 		this.utils = new Util(this);
 
 		this.once('ready', () => {
-			console.log(`Logged in as ${this.user.username}!`);
+			console.log(`Logged in as ${this.user.username} And Ready To Serve pixelDev Discord Server!`);
 		});
 
 		this.on('message', async (message) => {
@@ -25,7 +25,7 @@ module.exports = class SixteenClient extends Client {
 
 			if (!message.guild || message.author.bot) return;
 
-			if (message.content.match(mentionRegex)) message.channel.send(`My prefix for ${message.guild.name} is \`${this.prefix}\`.`);
+			if (message.content.match(mentionRegex)) message.channel.send(`My Prefix Is \`${this.prefix}\` Or <@805449154167046144>.`);
 
 			const prefix = message.content.match(mentionRegexPrefix) ?
 				message.content.match(mentionRegexPrefix)[0] : this.prefix;
@@ -43,13 +43,13 @@ module.exports = class SixteenClient extends Client {
 	}
 
 	validate(options) {
-		if (typeof options !== 'object') throw new TypeError('Options should be a type of Object.');
+		if (typeof options !== 'object') throw new TypeError('Options Should Be A Type Of Object.');
 
-		if (!options.token) throw new Error('You must pass the token for the client.');
+		if (!options.token) throw new Error('You Must Pass The Token For The Client.');
 		this.token = options.token;
 
-		if (!options.prefix) throw new Error('You must pass a prefix for the client.');
-		if (typeof options.prefix !== 'string') throw new TypeError('Prefix should be a type of String.');
+		if (!options.prefix) throw new Error('You Must Pass A Prefix For The Client.');
+		if (typeof options.prefix !== 'string') throw new TypeError('Prefix Should Be A Type Of String.');
 		this.prefix = options.prefix;
 	}
 

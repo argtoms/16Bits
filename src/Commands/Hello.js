@@ -4,7 +4,7 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			aliases: ['hallo']
+			aliases: ['hallo', 'hei', 'hai', 'hey', 'hi', 'ayy']
 		});
 	}
 
