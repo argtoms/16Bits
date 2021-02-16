@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-tesseract": "^0.0.3"
+  },
+  "name": "16bits",
+  "version": "1.0.0",
+  "description": "A Discord Bot Made By Sahal For pixelDev Discord Server",
+  "main": "src/index",
+  "repository": "https://github.com/pixdevgithub/16Bits.git",
+  "author": "Sahal <sahalbot@outlook.com>",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
