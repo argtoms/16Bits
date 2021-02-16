@@ -1,10 +1,6 @@
 # <div align="center">**_16Bits_**
 
-<div align="center">
-
-![Logo Image](https://i.imgur.com/ftOEreq.png)
-
-</div>
+<img src="https://github.com/pixdevgithub/16Bits/blob/main/image/e.png" height="450px" width="450px" align="middle" />
 
 <div align="center">
 
