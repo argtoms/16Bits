@@ -57,6 +57,7 @@ module.exports = class SixteenClient extends Client {
 
 	async start(token = this.token) {
 		this.utils.loadCommands();
+		this.utils.loadEvents();
 		super.login(token);
 	}
 
