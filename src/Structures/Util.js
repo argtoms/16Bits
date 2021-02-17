@@ -69,9 +69,9 @@ module.exports = class Util {
 				delete require.cache[eventFile];
 				const { name } = path.parse(eventFile);
 				const File = require(eventFile);
-				if (!this.isClass(File)) throw new TypeError(`Event ${name} doesn't export a class!`);
+				if (!this.isClass(File)) throw new TypeError(`Event ${name} Doesn't Export A Class!`);
 				const event = new File(this.client, name);
-				if (!(event instanceof Event)) throw new TypeError(`Event ${name} doesn't belong in Events`);
+				if (!(event instanceof Event)) throw new TypeError(`Event ${name} Doesn't Belong In Events`);
 				this.client.events.set(event.name, event);
 				event.emitter[event.type](name, (...args) => event.run(...args));
 			}
