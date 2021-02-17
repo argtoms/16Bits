@@ -13,7 +13,7 @@ module.exports = class extends Event {
 			`Logged in as ${this.user.username} And Ready To Serve pixelDev Discord Server!`,
 			`Loaded ${this.client.commands.size} Commands!`,
 			`Loaded ${this.client.events.size} Events!`
-		]);
+		].join('\n'));
 	}
 
 };
