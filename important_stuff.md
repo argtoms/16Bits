@@ -1,7 +1,8 @@
-Official Color =  #1ABC9C
+## Official Color =  #1ABC9C
 
-Make Your Own Command =>
+# Make Your Own Command =>
 
+```JavaScript
 const Command = require('../../Structures/Command'); //Getting The Command Handler So Command Works
 
 module.exports = class extends Command {
@@ -21,3 +22,4 @@ module.exports = class extends Command {
 	}
 
 };
+```
