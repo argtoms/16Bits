@@ -1,5 +1,3 @@
-## Official Color =  #1ABC9C
-
 # Make Your Own Command =>
 
 ```JavaScript
@@ -23,3 +21,4 @@ module.exports = class extends Command {
 
 };
 ```
+Official Color Code =  #1ABC9C
