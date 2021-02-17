@@ -13,6 +13,8 @@ module.exports = class SixteenClient extends Client {
 
 		this.aliases = new Collection();
 
+		this.events = new Collection();
+
 		this.utils = new Util(this);
 
 		this.owners = options.owners;
