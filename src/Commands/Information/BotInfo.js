@@ -10,7 +10,7 @@ module.exports = class extends Command {
 	constructor(...args) {
 		super(...args, {
 			aliases: ['info', 'bot'],
-			description: 'Displays information about the bot.',
+			description: 'Displays Information About The Bot.',
 			category: 'Information'
 		});
 	}

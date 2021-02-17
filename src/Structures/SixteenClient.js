@@ -15,6 +15,8 @@ module.exports = class SixteenClient extends Client {
 
 		this.utils = new Util(this);
 
+		this.owners = options.owners;
+
 		this.once('ready', () => {
 			console.log(`Logged in as ${this.user.username} And Ready To Serve pixelDev Discord Server!`);
 		});

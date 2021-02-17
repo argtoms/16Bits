@@ -34,7 +34,9 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			aliases: ['si', 'server', 'infoserver', 'guild', 'guildinfo']
+			aliases: ['si', 'server', 'infoserver', 'guild', 'guildinfo'],
+			description: 'Displays Information The Server',
+			category: 'Information'
 		});
 	}
 

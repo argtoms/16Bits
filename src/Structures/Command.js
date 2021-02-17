@@ -6,7 +6,7 @@ module.exports = class Command {
 		this.aliases = options.aliases || [];
 		this.description = options.description || 'No Description Was Provided.';
 		this.category = options.category || 'Miscellaneous';
-		this.usage = options.usage || 'No Usage Was Provided.';
+		this.usage = `${this.client.prefix}${this.name} ${options.usage || ''}`.trim();
 	}
 
 	// eslint-disable-next-line no-unused-vars
