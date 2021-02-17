@@ -19,10 +19,6 @@ module.exports = class SixteenClient extends Client {
 
 		this.owners = options.owners;
 
-		this.once('ready', () => {
-			console.log(`Logged in as ${this.user.username} And Ready To Serve pixelDev Discord Server!`);
-		});
-
 		this.on('message', async (message) => {
 			const mentionRegex = RegExp(`^<@!${this.user.id}>$`);
 			const mentionRegexPrefix = RegExp(`^<@!${this.user.id}> `);
