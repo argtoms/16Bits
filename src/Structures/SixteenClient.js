@@ -1,4 +1,5 @@
-const { Client } = require('discord.js');
+const { Client, Collection } = require('discord.js');
+const Util = require('./Util');
 
 module.exports = class SixteenClient extends Client {
 
@@ -7,6 +8,12 @@ module.exports = class SixteenClient extends Client {
 			disableMentions: 'everyone'
 		});
 		this.validate(options);
+
+		this.commands = new Collection();
+
+		this.aliases = new Collection();
+
+		this.utils = new Util(this);
 
 		this.once('ready', () => {
 			console.log(`Logged in as ${this.user.username} And Ready To Serve pixelDev Discord Server!`);
@@ -28,8 +35,9 @@ module.exports = class SixteenClient extends Client {
 			// eslint-disable-next-line no-unused-vars
 			const [cmd, ...args] = message.content.slice(prefix.length).trim().split(/ +/g);
 
-			if (cmd.toLowerCase() === 'hello') {
-				message.channel.send('Ello!');
+			const command = this.commands.get(cmd.toLowerCase()) || this.commands.get(this.aliases.get(cmd.toLowerCase()));
+			if (command) {
+				command.run(message, args);
 			}
 		});
 	}
@@ -46,6 +54,7 @@ module.exports = class SixteenClient extends Client {
 	}
 
 	async start(token = this.token) {
+		this.utils.loadCommands();
 		super.login(token);
 	}
 
