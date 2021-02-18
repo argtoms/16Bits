@@ -5,7 +5,7 @@ module.exports = class extends Command {
 	constructor(...args) {
 		super(...args, {
 			name: 'Hello',
-			aliases: ['hello', 'hai', 'hey', 'hei', 'ello', 'ayy'],
+			aliases: ['Hello', 'hello', 'hai', 'hey', 'hei', 'ello', 'ayy'],
 			description: 'The Bot Replies With A Hello Back At You..'
 		});
 	}
