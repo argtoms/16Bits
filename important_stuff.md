@@ -21,4 +21,4 @@ module.exports = class extends Command {
 
 };
 ```
-Official Color Code =  #1ABC9C
+Official Color Code = #544B94
