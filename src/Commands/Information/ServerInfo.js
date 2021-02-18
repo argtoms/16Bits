@@ -25,7 +25,7 @@ const regions = {
 	russia: 'Russia',
 	singapore: 'Singapore',
 	southafrica: 'South Africa',
-	sydney: 'Sydney',
+	sydeny: 'Sydeny',
 	'us-central': 'US Central',
 	'us-east': 'US East',
 	'us-west': 'US West',
@@ -36,6 +36,7 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
+			name: 'ServerInfo',
 			aliases: ['server', 'guild', 'guildinfo', 'si', 'serverinfo', 'ServerInfo'],
 			description: 'Shows The Information About The Server....',
 			category: 'Information'
