@@ -7,7 +7,8 @@ module.exports = class extends Command {
 		super(...args, {
 			name: 'Uptime',
 			aliases: ['Uptime', 'ut', 'uptime'],
-			description: 'Shows The Uptime Of The Bot'
+			description: 'Shows The Uptime Of The Bot',
+			category: 'Utilities'
 		});
 	}
 

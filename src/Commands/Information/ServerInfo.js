@@ -7,6 +7,7 @@ const filterLevels = {
 	MEMBERS_WITHOUT_ROLES: 'No Role',
 	ALL_MEMBERS: 'Everyone'
 };
+
 const verificationLevels = {
 	NONE: 'None',
 	LOW: 'Low',
@@ -14,6 +15,7 @@ const verificationLevels = {
 	HIGH: '(╯°□°）╯︵ ┻━┻',
 	VERY_HIGH: '┻━┻ ﾐヽ(ಠ益ಠ)ノ彡┻━┻'
 };
+
 const regions = {
 	brazil: 'Brazil',
 	europe: 'Europe',
@@ -34,16 +36,16 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			name: 'ServerInfo',
-			aliases: ['ServerInfo', 'si', 'serverinfo', 'guild', 'guildinfo'],
-			description: 'Shows The Information About the Server....'
+			aliases: ['server', 'guild', 'guildinfo', 'si', 'serverinfo', 'ServerInfo'],
+			description: 'Shows The Information About The Server....',
+			category: 'Information'
 		});
 	}
 
 	async run(message) {
 		const roles = message.guild.roles.cache.sort((a, b) => b.position - a.position).map(role => role.toString());
 		const members = message.guild.members.cache;
-		const channels = message.guilds.channels.cache;
+		const channels = message.guild.channels.cache;
 		const emojis = message.guild.emojis.cache;
 
 		const embed = new MessageEmbed()
@@ -57,7 +59,7 @@ module.exports = class extends Command {
 				`**- Region:** ${regions[message.guild.region]}`,
 				`**- Boost Tier:** ${message.guild.premiumTier ? `Tier ${message.guild.premiumTier}` : 'None'}`,
 				`**- Explicit Filter:** ${filterLevels[message.guild.explicitContentFilter]}`,
-				`**- Verification Level:** ${verificationLevels[message.guild.verificationLevels]}`,
+				`**- Verification Level:** ${verificationLevels[message.guild.verificationLevel]}`,
 				`**- Time Created:** ${moment(message.guild.createdTimestamp).format('LT')} ${moment(message.guild.createdTimestamp).format('LL')} ${moment(message.guild.createdTimestamp).fromNow()}`,
 				'\u200b'
 			])
@@ -75,10 +77,10 @@ module.exports = class extends Command {
 				'\u200b'
 			])
 			.addField('Presence', [
-				`**- Online:** ${members.filter(member => member.presence.status === 'online')}`,
-				`**- Idle:** ${members.filter(member => member.presence.status === 'idle')}`,
-				`**- Do Not Disturb:** ${members.filter(member => member.presence.status === 'dnd')}`,
-				`**- Offline:** ${members.filter(member => member.presence.status === 'offline')}`,
+				`**- Online:** ${members.filter(member => member.presence.status === 'online').size}`,
+				`**- Idle:** ${members.filter(member => member.presence.status === 'idle').size}`,
+				`**- Do Not Disturb:** ${members.filter(member => member.presence.status === 'dnd').size}`,
+				`**- Offline:** ${members.filter(member => member.presence.status === 'offline').size}`,
 				'\u200b'
 			])
 			.addField(`Roles [${roles.length - 1}]`, roles.length < 10 ? roles.join(', ') : roles.length > 10 ? this.client.utils.trimArray(roles) : 'None')

@@ -6,7 +6,8 @@ module.exports = class extends Command {
 		super(...args, {
 			name: 'Ping',
 			aliases: ['Ping', 'ping', 'pong'],
-			description: 'Shows The Ping Of The Bot'
+			description: 'Shows The Ping Of The Bot',
+			category: 'Utilities'
 		});
 	}
 
