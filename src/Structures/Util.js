@@ -1,7 +1,7 @@
 const path = require('path');
 const { promisify } = require('util');
 const glob = promisify(require('glob'));
-const Command = require('./Command');
+const Command = require('./Command.js');
 
 module.exports = class Util {
 
@@ -15,7 +15,7 @@ module.exports = class Util {
         input.toString().substring(0, 5) === 'class';
 	}
 
-	get Directory() {
+	get directory() {
 		return `${path.dirname(require.main.filename)}${path.sep}`;
 	}
 
