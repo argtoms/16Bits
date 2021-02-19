@@ -17,7 +17,7 @@ module.exports = class extends Command {
 		if (!args.slice(0).join(' ')) {
 			const ErrorEmbed = new Discord.MessageEmbed()
 				.setTitle('Youch! I bumped into an error!')
-				.setColor(0xff0000)
+				.setColor('#FF0000')
 				.addField('Error', `\`\`Provide a question for the 8-ball.\`\``)
 				.setTimestamp();
 
@@ -59,7 +59,7 @@ module.exports = class extends Command {
 
 		const Embed = new Discord.MessageEmbed()
 			.setTitle('The 8-Ball has spoken!')
-			.setColor(0xa6e1ff)
+			.setColor('#FF0000')
 			.setDescription(`\`\`${args.slice(0).join(' ')}\`\``)
 			.addField('Answer', `\`\`${Choice.Message}\`\``)
 			.addField('Rating', RatingArray[Choice.Rating])

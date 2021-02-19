@@ -26,7 +26,7 @@ module.exports = class extends Command {
 		if (!safe.length) {
 			return message.channel.send(
 				new MessageEmbed()
-					.setColor('#3377de')
+					.setColor('#FF0000')
 					.setDescription(`Couldn't get the post.`)
 			);
 		}
@@ -35,7 +35,7 @@ module.exports = class extends Command {
 
 		return message.channel.send(
 			new MessageEmbed()
-				.setColor('#3377de')
+				.setColor('#544B94')
 				.setAuthor(
 					`${post.data.title}`,
 					message.author.displayAvatarURL({ dynamic: true }),
