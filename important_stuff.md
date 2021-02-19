@@ -21,4 +21,10 @@ module.exports = class extends Command {
 
 };
 ```
+
+# Make Your Own Event =>
+
+```JavaScript
+```
+
 Official Color Code = #544B94
