@@ -22,6 +22,8 @@ The Bot Uses:
 
 [`Node.js`](https://nodejs.org/) And [`Yarn`](https://classic.yarnpkg.com/en/) - Runtime Engine For Running The Bot
 
+[`Some Random API`](https://some-random-api.ml/) - For The Animal Photos And Facts Commands
+
 # A Note To People Who Want To Self Host 16Bits
 
 16Bits Isn't Made With Self Hosting In Mind. This Source Code Was Published Here For People To See How The Bot Works And For Transparency. We Are NOT Recommending You To Create Your Instance Of The Bot.
