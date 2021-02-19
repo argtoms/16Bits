@@ -1,4 +1,4 @@
-const { Client, Collection } = require('discord.js');
+const { Client, Collection, Permissions } = require('discord.js');
 const Util = require('./Util');
 
 module.exports = class SixteenClient extends Client {
@@ -29,6 +29,9 @@ module.exports = class SixteenClient extends Client {
 		if (!options.prefix) throw new Error('You Must Pass A Prefix For The Client.');
 		if (typeof options.prefix !== 'string') throw new TypeError('Prefix Should Be A Type Of String.');
 		this.prefix = options.prefix;
+
+		if (!options.defaultPerms) throw new Error('You must pass default perm(s) for the Client.');
+		this.defaultPerms = new Permissions(options.defaultPerms).freeze();
 	}
 
 	async start(token = this.token) {
