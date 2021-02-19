@@ -7,35 +7,30 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			name: 'Koala',
-			aliases: ['Koala', 'koala'],
-			description: 'Provides You With A Random Koala Picture & Fact',
+			name: 'RedPanda',
+			aliases: ['RedPanda', 'redpanda', 'rp'],
+			description: 'Provides You With A Random Red Panda Picture',
 			category: 'Animals'
 		});
 	}
 
 	// eslint-disable-next-line consistent-return
 	async run(message) {
-		const url = 'https://some-random-api.ml/img/koala';
-		const facts = 'https://some-random-api.ml/facts/koala';
+		const url = 'https://some-random-api.ml/img/red_panda';
 
 		let image, response;
-		let fact, responses;
 		try {
 			response = await axios.get(url);
 			image = response.data;
 
-			responses = await axios.get(facts);
-			fact = responses.data;
 		// eslint-disable-next-line id-length
 		} catch (e) {
 			return message.channel.send(`An error occured, please try again!`);
 		}
 
 		const embed = new MessageEmbed()
-			.setTitle(`Random Koala Image and Fact`)
+			.setTitle(`Random Red Panda Image`)
 			.setColor(`#544B94`)
-			.setDescription(fact.fact)
 			.setImage(image.link);
 
 		await message.channel.send(embed);
