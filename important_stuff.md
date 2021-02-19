@@ -27,6 +27,15 @@ module.exports = class extends Command {
 # Make Your Own Event =>
 
 ```JavaScript
+    const Event = require('../Structures/Event'); // Getting The Event Handler
+
+    module.exports = class extends Event {
+
+	    run() {
+            // Add Code Here
+        }
+
+    };
 ```
 
 Official Color Code = #544B94
