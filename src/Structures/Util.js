@@ -45,11 +45,11 @@ module.exports = class Util {
 	}
 
 	checkOwner(target) {
-		return this.client.owners.includes(target)
+		return this.client.owners.includes(target);
 	}
 
 	comparePerms(member, target) {
-		return member.roles.highest.position < target.roles.highest.position
+		return member.roles.highest.position < target.roles.highest.position;
 	}
 
 	formatPerms(perm) {
