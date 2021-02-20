@@ -46,10 +46,10 @@ module.exports = class extends Command {
             usage: '', // <> Means Strict And [] Means Optional. Eg: !user [user_name] Or !kick <user_name>
 			userPerms: ['eg: ADMINISTRATOR'], // Add Your Permissions Required For The User To Use The Command...
 			botPerms: [''], // Same As Above But For The Bot...
-			nsfw: , // true or false
-			args: , // true or false
-			guildOnly: , // true or false
-			ownerOnly: , // true or false
+			nsfw: , // true or false // Adding This Will Make Sure That The Command Only Works In NSFW Marked Channels
+			args: , // true or false // If You Have A Strict Usage Parameter, You Can Add This. What It Does It If A User Does Not Provide Am Argument Along With An Command, The Bot Will Reply That You Need The Argument And Shows The Usage Of The Command
+			guildOnly: , // true or false // Adding This Will Make Sure The Command Only Works In A Server And Not In DMs Of The Bot
+			ownerOnly: , // true or false // Adding This Will Make The Command Only To Be Used By Owner. This Is Very Useful Especially When You Have Eval Or Execute Commands....
 		});
 	}
 
