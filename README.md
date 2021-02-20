@@ -30,6 +30,8 @@ The Bot Uses:
 
 If You Really Really Want To Self Host This Bot, We Won't Be Giving You Any Help Or Documentation On Hosting This Bot Because We Don't Want To Waste Our Time Doing Something We Don't Want People To Do. You Will Be On Your Own. Good Luck.....
 
+Also We Are Giving People Permission To Use The Bot According To The Reason Of Why They Want To Use The Bot. We Will Only Provide Them With The Help And Documentation To Use The Bot..
+
 # Contributing
 
 Your Contributions Are Welcome :)
