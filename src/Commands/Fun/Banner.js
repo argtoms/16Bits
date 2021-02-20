@@ -9,7 +9,8 @@ module.exports = class extends Command {
 			aliases: ['Banner', 'banner'],
 			description: 'Creates A Banner With The Text You Provided',
 			category: 'Fun',
-			usage: '<Text>'
+			usage: '<Text>',
+			args: true
 		});
 	}
 

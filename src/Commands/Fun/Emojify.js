@@ -10,7 +10,8 @@ module.exports = class extends Command {
 			description: 'Makes The Text You Sent Into Emojis',
 			category: 'Fun',
 			aliases: ['emojify', 'Emojify'],
-			usage: '<Text>'
+			usage: '<Text>',
+			args: true
 			/**
      * @param {Client} client
      * @param {Message} message

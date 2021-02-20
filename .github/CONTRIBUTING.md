@@ -45,7 +45,11 @@ module.exports = class extends Command {
 			category: '', //Category Of The Command
             usage: '', // <> Means Strict And [] Means Optional. Eg: !user [user_name] Or !kick <user_name>
 			userPerms: ['eg: ADMINISTRATOR'], // Add Your Permissions Required For The User To Use The Command...
-			botPerms: [''] // Same As Above But For The Bot...
+			botPerms: [''], // Same As Above But For The Bot...
+			nsfw: , // true or false
+			args: , // true or false
+			guildOnly: , // true or false
+			ownerOnly: , // true or false
 		});
 	}
 

@@ -9,7 +9,8 @@ module.exports = class extends Command {
 			aliases: ['8ball', '8Ball'],
 			description: 'A Command Decides Your Fate With An 8-Ball, Obviously 8-Balls Aren\'t Real You Idiot.',
 			category: 'Fun',
-			usage: '<Your Question>'
+			usage: '<Your Question>',
+			args: true
 		});
 	}
 
