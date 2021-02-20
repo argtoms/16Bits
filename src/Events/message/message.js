@@ -19,7 +19,7 @@ module.exports = class extends Event {
 
 		const command = this.client.commands.get(cmd.toLowerCase()) || this.client.commands.get(this.client.aliases.get(cmd.toLowerCase()));
 		if (command) {
-            if (command.ownerOnly && !this.client.utils.checkOwner(message.author)) {
+            if (command.ownerOnly && !this.client.utils.checkOwner(message.author.id)) {
 				return message.reply('Whoops, This Command Can Only Be Used By The Bot Owner(s).');
 			}
 
@@ -36,20 +36,22 @@ module.exports = class extends Event {
 				command.usage : 'This Command Doesn\'t Have A Usage Format'}.`)
 			}
 
-			const userPermCheck = command.userPerms ? this.client.defaultPerms.add(command.userPerms) : this.client.defaultPerms;
-			if (message.guild && userPermCheck) {
-				const missing = message.channel.permissionsFor(message.member).missing(userPermCheck);
-				if (missing.length) {
-					return message.reply(`You Are Missing ${this.client.utils.formatArray(missing.map(this.client.utils.formatPerms))} Permissions, You Need Em To Use This Command.`);
-				}
-			}
+			if (message.guild) {
+				const userPermCheck = command.userPerms ? this.client.defaultPerms.add(command.userPerms) : this.client.defaultPerms;
+			    if (userPermCheck) {
+				    const missing = message.channel.permissionsFor(message.member).missing(userPermCheck);
+				    if (missing.length) {
+					    return message.reply(`You Are Missing ${this.client.utils.formatArray(missing.map(this.client.utils.formatPerms))} Permissions, You Need Em To Use This Command.`);
+				    }
+			    }
 
-			const botPermCheck = command.botPerms ? this.client.defaultPerms.add(command.botPerms) : this.client.defaultPerms;
-			if (message.guild && botPermCheck) {
-				const missing = message.channel.permissionsFor(this.client.user).missing(botPermCheck);
-				if (missing.length) {
-					return message.reply(`You Are Missing ${this.client.utils.formatArray(missing.map(this.client.utils.formatPerms))} Permissions, You Need Em To Use This Command.`);
-				}
+			    const botPermCheck = command.botPerms ? this.client.defaultPerms.add(command.botPerms) : this.client.defaultPerms;
+			        if (botPermCheck) {
+				        const missing = message.channel.permissionsFor(this.client.user).missing(botPermCheck);
+				    if (missing.length) {
+					    return message.reply(`You Are Missing ${this.client.utils.formatArray(missing.map(this.client.utils.formatPerms))} Permissions, You Need Em To Use This Command.`);
+				    }
+			    }
 			}
 
 			command.run(message, args);

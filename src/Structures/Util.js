@@ -44,8 +44,8 @@ module.exports = class Util {
 		return string.split(' ').map(str => str.slice(0, 1).toUpperCase() + str.slice(1)).join(' ');
 	}
 
-	async checkOwner(target) {
-		return this.client.owners.includes(target.id)
+	checkOwner(target) {
+		return this.client.owners.includes(target)
 	}
 
 	comparePerms(member, target) {

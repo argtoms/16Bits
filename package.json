@@ -11,6 +11,7 @@
     "eslint-config-tesseract": "^0.0.3"
   },
   "dependencies": {
+    "@extreme_hero/deeptype": "^1.0.1",
     "axios": "^0.21.1",
     "diff": "^5.0.0",
     "discord.js": "^12.5.1",
