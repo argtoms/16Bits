@@ -346,7 +346,7 @@ escape-string-regexp@^1.0.5:
 
 eslint-config-tesseract@^0.0.3:
   version "0.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-tesseract/-/eslint-config-tesseract-0.0.3.tgz"
+  resolved "https://registry.yarnpkg.com/eslint-config-tesseract/-/eslint-config-tesseract-0.0.3.tgz#3021e71ad26b72e3ec3864a951bd4e438e3f75d9"
   integrity sha512-zE8Lp5Ys8pL0NNR4Tzlpni2JhDVvifr6S1qJCjpU5P/nylanVcZHyg3v60CiA4pgpCd70YRMoyaF7aZI28t7Og==
 
 eslint-scope@^5.1.1:
@@ -376,7 +376,7 @@ eslint-visitor-keys@^2.0.0:
 
 eslint@^7.20.0:
   version "7.20.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.20.0.tgz"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.20.0.tgz#db07c4ca4eda2e2316e7aa57ac7fc91ec550bdc7"
   integrity sha512-qGi0CTcOGP2OtCQBgWZlQjcTuP0XkIpYFj25XtRTQSHC+umNnp7UMshr2G8SLsRFYDdAPFeHOsiteadmMH02Yw==
   dependencies:
     "@babel/code-frame" "7.12.11"
