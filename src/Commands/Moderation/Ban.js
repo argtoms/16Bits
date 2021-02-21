@@ -8,7 +8,7 @@ module.exports = class extends Command {
 			aliases: ['ban', 'ban'],
 			description: 'Used For Banning Members From The Guild',
 			category: 'Moderation',
-			usage: '<@user>',
+			usage: '<@user Reason>',
 			userPerms: ['ADMINISTRATOR', 'BAN_MEMBERS'],
 			botPerms: ['ADMINISTRATOR', 'BAN_MEMBERS'],
 			args: true,

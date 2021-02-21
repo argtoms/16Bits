@@ -9,7 +9,7 @@ module.exports = class extends Command {
 			aliases: ['GiveRole', 'giverole', 'grole'],
 			description: 'Used For Giving Roles To A User From The Guild',
 			category: 'Moderation',
-			usage: '<Role>',
+			usage: '<@User @Role|RoleID>',
 			userPerms: ['ADMINISTRATOR', 'MANAGE_ROLES'],
 			botPerms: ['ADMINISTRATOR', 'MANAGE_ROLES'],
 			args: true,
