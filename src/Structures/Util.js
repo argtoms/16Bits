@@ -48,6 +48,18 @@ module.exports = class Util {
 		return this.client.owners.includes(target);
 	}
 
+	categoryCheck(category, message) {
+		category = category.toLowerCase();
+		switch (category) {
+			case 'owner':
+				return this.checkOwner(message.author.id);
+			case 'nsfw':
+				return message.channel.nsfw;
+			default:
+				return true;
+		}
+	}
+
 	comparePerms(member, target) {
 		return member.roles.highest.position < target.roles.highest.position;
 	}
