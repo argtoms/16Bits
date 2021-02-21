@@ -9,8 +9,8 @@ module.exports = class extends Command {
 			description: 'Used For Banning Members From The Guild',
 			category: 'Moderation',
 			usage: '<@user>',
-			userPerms: ['ADMINISTRATOR'],
-			botPerms: ['ADMINISTRATOR'],
+			userPerms: ['ADMINISTRATOR', 'BAN_MEMBERS'],
+			botPerms: ['ADMINISTRATOR', 'BAN_MEMBERS'],
 			args: true,
 			guildOnly: true
 		});
