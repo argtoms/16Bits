@@ -7,7 +7,7 @@ module.exports = class extends Command {
 		super(...args, {
 			aliases: ['exec', 'Execute', 'execute'],
 			description: 'Executes Commands In The Console',
-			category: 'Developer',
+			category: 'Owner',
 			ownerOnly: true,
 			args: true,
 			usage: '<query>'
@@ -15,10 +15,10 @@ module.exports = class extends Command {
 	}
 
 	async run(message, ...args) {
-        exec(args.join(' '), (error, stdout) => {
-            const response = stdout || error;
-            message.channel.send(response, { split: true, code: true });
-        });
+		exec(args.join(' '), (error, stdout) => {
+			const response = stdout || error;
+			message.channel.send(response, { split: true, code: true });
+		});
 	}
 
 };
