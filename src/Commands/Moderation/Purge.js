@@ -10,8 +10,8 @@ module.exports = class extends Command {
 			description: 'Used For Purging Messages In A Channel From The Guild',
 			category: 'Moderation',
 			usage: '<1-100>',
-			userPerms: ['ADMINISTRATOR'],
-			botPerms: ['ADMINISTRATOR'],
+			userPerms: ['ADMINISTRATOR', 'MANAGE_MESSAGES'],
+			botPerms: ['ADMINISTRATOR', 'MANAGE_MESSAGES'],
 			args: true,
 			guildOnly: true
 		});
