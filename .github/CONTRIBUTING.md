@@ -17,7 +17,51 @@ To Run 16Bits
 
 1. Install [Yarn](https://classic.yarnpkg.com/en/) And [Node.js](https://nodejs.org/en/).
 
-2. Get MongoDB Connection URL. (Make A Tutorial Here Later Sahal)
+2. Get MongoDB Connection URL.
+    
+    * Go To [MongoDB Atlas Cloud Registration Page](https://www.mongodb.com/cloud/atlas/register) And Get An Account There.
+
+        ### <u> Making A Cluster </u>
+
+    * You can create a cluster which is absolutely free, no credit cards needed. But if you want higher storage and performance, you're free to get a paid one. (Not recommended if you're using the bot in just one server)
+
+    * Select Your cloud Provider & Region. Make sure you choose a region closest to you
+
+    * Cluster Tier - The Default will be set to the free tier, you can change this if you're willing to pay.
+
+    * Now for the cluster name, you can use any name you want.
+
+    * Now hit Create Cluster, It May take a couple of minutes so let it do its job.
+
+        ### <u> Getting The Connection URL </u>
+
+    * The most important thing and the thing you need for this installation, is the MongoDB database connection URL.
+
+    * Now on the left sidebar you'll see some options, click `Database Access`
+
+    * Click on add a new Database user
+
+    * Choose the Authentication Method as Password. Now Add a Username and a password (Make Sure You Remember Both)
+
+    * You Can set the Database User Privileges to either `Atlas Admin` or `Read and Write data to any database`.
+
+    *  Now on the left sidebar you'll see some options, click `Network access`
+
+    * Click on Add IP Address
+
+    * For the IP Address, You will have to choose Allow Access from Anywhere so that your bot can access the database.
+
+    * Now come back to Clusters and click on the Connect button .
+
+    * Now you're at the Choose a Connection Method window, Choose the third option which is the Connect using MongoDB Compass.
+
+    * Now copy the connection string, it will look something like this -
+        ```mongodb+srv://testing:<password>@cluster0.xxxxx.mongodb.net/test```
+
+    * Now You'll need to replace `<username>` with your database user username and `<password>` with your database user password.
+
+    * You're all good! Now paste the URL in the `config.json` file which is shown below
+
 
 3. Make A File Named `config.json` And Fill It Up With The Content Given Below.
 
@@ -27,7 +71,7 @@ To Run 16Bits
     "token": "", // Token For The Discord Bot.
     "owners": [""], // Discord ID(s) For The Owners.
     "defaultPerms": ["SEND_MESSAGES", "VIEW_CHANNEL", "SPEAK"], // Default Permissions Needed For The Users To Use The Bot.
-    "mongo_url": "" // MongoDB Url. 
+    "mongo_url": "" // MongoDB Connection Url. 
 
 }
 ```
@@ -36,4 +80,4 @@ To Run 16Bits
 
 
 
-### Official Color Code = ```#544B94```
+### 16Bits Official Color Code = ```#544B94```
