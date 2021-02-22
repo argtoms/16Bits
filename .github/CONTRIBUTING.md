@@ -76,7 +76,7 @@ To Run 16Bits
 }
 ```
 
-3. Install The Required Packages By Doing `npm i` And Start The Bot Using `node .`
+4. Install The Required Packages By Doing `npm i` And Start The Bot Using `node .`
 
 
 
