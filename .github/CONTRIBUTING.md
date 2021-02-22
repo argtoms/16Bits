@@ -55,8 +55,7 @@ To Run 16Bits
 
     * Now you're at the Choose a Connection Method window, Choose the third option which is the Connect using MongoDB Compass.
 
-    * Now copy the connection string, it will look something like this -
-        ```mongodb+srv://testing:<password>@cluster0.xxxxx.mongodb.net/test```
+    * Now copy the connection string, it will look something like this - ```mongodb+srv://testing:<password>@cluster0.xxxxx.mongodb.net/test```
 
     * Now You'll need to replace `<username>` with your database user username and `<password>` with your database user password.
 
