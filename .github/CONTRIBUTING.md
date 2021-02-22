@@ -17,14 +17,18 @@ To Run 16Bits
 
 1. Install [Yarn](https://classic.yarnpkg.com/en/) And [Node.js](https://nodejs.org/en/).
 
-2. Make A File Named `config.json` And Fill It Up With The Content Given Below.
+2. Get MongoDB Connection URL. (Make A Tutorial Here Later Sahal)
+
+3. Make A File Named `config.json` And Fill It Up With The Content Given Below.
 
 ```json 
 {
     "prefix": "", // Prefix For The Bot.
     "token": "", // Token For The Discord Bot.
     "owners": [""], // Discord ID(s) For The Owners.
-    "defaultPerms": ["SEND_MESSAGES", "VIEW_CHANNEL", "SPEAK"] // Default Permissions Needed For The Users To Use The Bot.
+    "defaultPerms": ["SEND_MESSAGES", "VIEW_CHANNEL", "SPEAK"], // Default Permissions Needed For The Users To Use The Bot.
+    "mongo_url": "" // MongoDB Url. 
+
 }
 ```
 

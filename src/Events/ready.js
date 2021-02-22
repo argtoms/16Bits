@@ -1,4 +1,6 @@
 const Event = require('../Structures/Event');
+const config = require('../../config.json');
+const mongoose = require('mongoose');
 
 module.exports = class extends Event {
 
@@ -25,6 +27,14 @@ module.exports = class extends Event {
 
 		let i = 0;
 		setInterval(() => this.client.user.setActivity(`${this.client.prefix}help | ${activities[i++ % activities.length]}`, { type: 'WATCHING' }), 15000);
+
+		// eslint-disable-next-line camelcase
+		const { mongo_url } = config;
+
+		mongoose.connect(mongo_url, {
+			useNewUrlParser: true,
+			useUnifiedTopology: true
+		}).then(console.log('Connected to 16Bits Database'));
 	}
 
 };

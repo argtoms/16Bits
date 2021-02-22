@@ -7,7 +7,7 @@ module.exports = class extends Command {
 		super(...args, {
 			name: 'UnlockChannel',
 			aliases: ['unlock', 'UnlockChannel'],
-			description: 'Used For Un;ocking A Channel From The Guild',
+			description: 'Used For Unlocking A Channel From The Guild',
 			category: 'Moderation',
 			usage: '<#channel>',
 			userPerms: ['ADMINISTRATOR', 'MANAGE_CHANNELS'],
