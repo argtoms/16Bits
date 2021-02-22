@@ -12,7 +12,7 @@ module.exports = class extends Command {
 			aliases: ['Unwarn', 'unwarn'],
 			description: 'Used For Unwarning A Member From The Guild',
 			category: 'Moderation',
-			usage: '<@user Reason>',
+			usage: '<ID @user>',
 			userPerms: ['ADMINISTRATOR', 'KICK_MEMBERS', 'BAN_MEMBERS'],
 			botPerms: ['ADMINISTRATOR', 'KICK_MEMBERS', 'BAN_MEMBERS'],
 			args: true,
