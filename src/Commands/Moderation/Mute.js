@@ -52,7 +52,7 @@ module.exports = class extends Command {
 
 		const embed = new MessageEmbed()
 			.setAuthor(`You Muted ${message.mentions.users.first().username} | Reason - ${reason}`)
-			.setColor('BLUE');
+			.setColor('#544B94');
 
 
 		try {
