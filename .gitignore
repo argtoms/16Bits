@@ -6,3 +6,6 @@ config.json
 
 #VSCode Stuff
 .vscode
+
+# ZIP File So We Can Upload To Our Host Faster
+bot.zip
