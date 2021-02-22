@@ -7,11 +7,11 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-            name: '', //Name Of The Command
+                        name: '', //Name Of The Command
 			aliases: [''], //Add Some Alias To The Command
 			description: '', //Description For The Command
 			category: '', //Category Of The Command
-            usage: '', // <> Means Strict And [] Means Optional. Eg: !user [user_name] Or !kick <user_name>
+                        usage: '', // <> Means Strict And [] Means Optional. Eg: !user [user_name] Or !kick <user_name>
 			userPerms: ['eg: ADMINISTRATOR'], // Add Your Permissions Required For The User To Use The Command...
 			botPerms: [''], // Same As Above But For The Bot...
 			nsfw: , // true or false // Adding This Will Make Sure That The Command Only Works In NSFW Marked Channels
