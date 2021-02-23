@@ -8,4 +8,4 @@ config.json
 .vscode
 
 # ZIP File So We Can Upload To Our Host Faster
-bot.zip
+*.zip
