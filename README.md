@@ -30,7 +30,7 @@ The Bot Uses:
 
 You Are Free To Self Host The Bot. Just Credit The Repo Or The `pixelDev` Name In Any Form.
 
-Read  [CONTRIBUTING.md](https://github.com/pixdevgithub/16Bits/blob/main/.github/CONTRIBUTING.md#run-16bits-locally) For Self Hosting The Bot.
+Read  [CONTRIBUTING.md](https://github.com/pixdevgithub/16Bits/blob/main/CONTRIBUTING.md#run-16bits-locally) For Self Hosting The Bot.
 
 Read [README.md](https://github.com/pixdevgithub/16Bits/blob/main/src/Commands/README.md) In The Commands Folder For More Info On Making Your Own Commands.
 
