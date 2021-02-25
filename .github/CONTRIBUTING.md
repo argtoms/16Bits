@@ -77,6 +77,15 @@ To Run 16Bits
 
 4. Install The Required Packages By Doing `npm i` And Start The Bot Using `node .`
 
+5. Make Sure You Have A Command Named `Muted` For The Mute Command To Work.
 
+6. Add The Channel ID In Line 20 Of Suggest.js Show Below
+
+```javascript
+const neededChannel = '814420784838737930'; 
+
+```
+
+Change The Existing ID To A Channel Where You Want The Suggestions To Be Sent
 
 ### 16Bits Official Color Code = ```#544B94```
