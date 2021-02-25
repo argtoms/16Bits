@@ -4,6 +4,6 @@
 
 First Bot Release
 
-# [1.0.1](https://github.com/pixdevgithub/16Bits/tree/8d28eda8de4ff0afbff917766171f88affa5217a) | 25/02/2021
+# [1.0.1](https://github.com/pixdevgithub/16Bits/tree/9abcc5279276f7fb13ff934072073f23c520ae7f) | 25/02/2021
 
 New Suggest Command Is Added
