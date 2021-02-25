@@ -61,8 +61,9 @@ To Run 16Bits
 
     * You're all good! Now paste the URL in the `config.json` file which is shown below
 
+3. Download The Latest [Release](https://github.com/pixdevgithub/16Bits/releases) Or Clone The Repo By Doing (You Need Git Installed) `https://github.com/pixdevgithub/16Bits.git`
 
-3. Make A File Named `config.json` And Fill It Up With The Content Given Below.
+4. Make A File Named `config.json` And Fill It Up With The Content Given Below.
 
 ```json 
 {
@@ -75,11 +76,11 @@ To Run 16Bits
 }
 ```
 
-4. Install The Required Packages By Doing `npm i` And Start The Bot Using `node .`
+5. Install The Required Packages By Doing `npm i` And Start The Bot Using `node .`
 
-5. Make Sure You Have A Command Named `Muted` For The Mute Command To Work.
+6. Make Sure You Have A Command Named `Muted` For The Mute Command To Work.
 
-6. Add The Channel ID In Line 20 Of Suggest.js Show Below
+7. Add The Channel ID In Line 20 Of Suggest.js Show Below
 
 ```javascript
 const neededChannel = '814420784838737930'; 
