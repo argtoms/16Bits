@@ -16,7 +16,7 @@ module.exports = class extends Command {
 
 	// eslint-disable-next-line consistent-return
 	async run(message, args) {
-		const neededChannel = '814414640129507368';
+		const neededChannel = '814420784838737930';
 
 		const channel = this.client.channels.cache.get(neededChannel);
 
