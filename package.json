@@ -1,6 +1,6 @@
 {
   "name": "16bits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "16Bits Is A Discord Bot Made By Sahal Using Discord.js For pixelDev's Discord Server",
   "main": "src/index",
   "repository": "https://github.com/pixdevgithub/16Bits.git",
