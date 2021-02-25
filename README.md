@@ -52,4 +52,4 @@ Read [CONTRIBUTING.md](https://github.com/pixdevgithub/16Bits/blob/main/.github/
 
 ### Read The [CHANGELOG](https://github.com/pixdevgithub/16Bits/blob/main/.github/CHANGELOG.md) For Information About Each Version
 
-The Bot Repository Is Also Available On [GitLab](https://gitlab.com/SahalDev/16Bits).
+### The Bot Repository Is Also Available On [GitLab](https://gitlab.com/SahalDev/16Bits).
