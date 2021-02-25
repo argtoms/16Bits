@@ -9,6 +9,7 @@ module.exports = class extends Command {
 			aliases: ['Suggest', 'suggest'],
 			description: 'Used For Suggesting Something Related To Server Or Something Else',
 			usage: '<Suggestion>',
+			category: 'Utilities',
 			args: true,
 			guildOnly: true
 		});
