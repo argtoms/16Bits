@@ -26,13 +26,15 @@ The Bot Uses:
 
 [`Mongo DB Atlas`](https://www.mongodb.com/cloud/atlas) - For Storing Warns Of Members
 
-# A Note To People Who Want To Self Host 16Bits
+# Self Hosting 16Bits
 
-16Bits Isn't Made With Self Hosting In Mind. This Source Code Was Published Here For People To See How The Bot Works And For Transparency. We Are NOT Recommending You To Create Your Instance Of The Bot.
+You Are Free To Self Host The Bot. Just Credit The Repo Or The `pixelDev` Name In Any Form.
 
-If You Really Really Want To Self Host This Bot, We Won't Be Giving You Any Help Or Documentation On Hosting This Bot Because We Don't Want To Waste Our Time Doing Something We Don't Want People To Do. You Will Be On Your Own. Good Luck.....
+Read  [CONTRIBUTING.md](https://github.com/pixdevgithub/16Bits/blob/main/.github/CONTRIBUTING.md#run-16bits-locally) For Self Hosting The Bot.
 
-Also We Are Giving People Permission To Use The Bot According To The Reason Of Why They Want To Use The Bot. We Will Only Provide Them With The Help And Documentation To Use The Bot..
+Read [README.md](https://github.com/pixdevgithub/16Bits/blob/main/src/Commands/README.md) In The Commands Folder For More Info On Making Your Own Commands.
+
+Read [README.md](https://github.com/pixdevgithub/16Bits/blob/main/src/Events/README.md) In The Events Folder For More Info On Making Your Own Events.
 
 # Contributing
 
