@@ -36,6 +36,8 @@ Read [README.md](https://github.com/pixdevgithub/16Bits/blob/main/src/Commands/R
 
 Read [README.md](https://github.com/pixdevgithub/16Bits/blob/main/src/Events/README.md) In The Events Folder For More Info On Making Your Own Events.
 
+Join Our Discord If You Need Our Help :)
+
 # Contributing
 
 Your Contributions Are Welcome :)
