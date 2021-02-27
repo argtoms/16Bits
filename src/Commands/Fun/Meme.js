@@ -16,7 +16,7 @@ module.exports = class extends Command {
 
 	async run(message) {
 		const res = await fetch(
-			`https://www.reddit.com/r/memes.json?sort=top&t=week`
+			`https://www.reddit.com/r/memes.json?sort=hot`
 		);
 		const { data } = await res.json();
 
