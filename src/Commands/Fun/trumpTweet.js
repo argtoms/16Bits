@@ -10,7 +10,9 @@ module.exports = class extends Command {
 			name: 'TrumpTweet',
 			aliases: ['TrumpTweet', 'trumptweet', 'tt'],
 			description: 'Display\'s a custom tweet from Donald Trump with the message provided.',
-			category: 'Fun'
+			category: 'Fun',
+      usage: '<text>',
+      args: true
 		});
 	}
 
