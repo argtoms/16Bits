@@ -11,3 +11,7 @@ New Suggest Command Is Added
 # [1.0.2](https://github.com/pixdevgithub/16Bits/releases/tag/v1.0.2) | 27/02/2021
 
 New `Trump Tweet` Command Is Added As A Replacement To Broken `Would You Rather` Command.
+
+# [1.0.3](https://github.com/pixdevgithub/16Bits/releases/tag/v1.0.3) | 05/03/21
+
+Server Information Command Fix
