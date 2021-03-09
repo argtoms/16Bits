@@ -1,5 +1,6 @@
 # Contributing
 
+Hello There 👋! Thanks For Contributing To 16Bits. 
 If You Need Some Kind Of Help For Contributions, Feel Free To Join Our [Discord](https://discord.gg/syPv4ezZEM/) And Ask Us About It.
 
 To Contribute To The Repository,
