@@ -42,7 +42,7 @@ Join Our Discord If You Need Our Help :)
 
 Your Contributions Are Welcome :)
 
-Read [CONTRIBUTING.md](https://github.com/pixdevgithub/16Bits/blob/main/.github/CONTRIBUTING.md) For More On Contributions.
+Read [CONTRIBUTING.md](https://github.com/pixdevgithub/16Bits/blob/main/CONTRIBUTING.md#contributing) For More On Contributions.
 
 ### <u> Contributers </u>
 
