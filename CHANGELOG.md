@@ -17,3 +17,7 @@ New `Trump Tweet` Command Is Added As A Replacement To Broken `Would You Rather`
 # [1.0.3](https://github.com/pixdevgithub/16Bits/releases/tag/v1.0.3) | 05/03/21
 
 Server Information Command Fix
+
+# [1.0.4](https://github.com/pixdevgithub/16Bits/releases/tag/v1.0.4) | 11/03/21
+
+Guild Member Add Event With Welcome Message And Auto Role
