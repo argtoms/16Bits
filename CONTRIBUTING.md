@@ -90,4 +90,16 @@ const neededChannel = '814420784838737930';
 
 Change The Existing ID To A Channel Where You Want The Suggestions To Be Sent
 
+8. Change The Role, Channel ID And Text At src/Events/guild/guildMemberAdd.js
+
+Line 6:82 - Change The `RoleName` To Your Role Name
+```javascript
+const welcomeRole = guildMemberAdd.guild.roles.cache.find(role => role.name === 'RoleName');
+```
+
+Line 9:50 And 9:69 - On `9:50` Add The ChannelID For Channel Your Welcome Message To Be Sent In And On `9:68` Change The Welcome Message
+```javascript
+guildMemberAdd.guild.channels.cache.get('CHANNELID').send(`Welcome <@${guildMemberAdd.user.id}> To The Server!`);
+```
+
 ### 16Bits Official Color Code = ```#544B94```
