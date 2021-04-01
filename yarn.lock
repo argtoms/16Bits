@@ -281,18 +281,18 @@ diff@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/diff/-/diff-5.0.0.tgz"
 
-discord.js@^12.5.1:
-  version "12.5.1"
-  resolved "https://registry.npmjs.org/discord.js/-/discord.js-12.5.1.tgz"
+discord.js@^12.5.2:
+  version "12.5.2"
+  resolved "https://registry.yarnpkg.com/discord.js/-/discord.js-12.5.2.tgz#7a81c39d11b56747656c60127709ee9dfa3119bf"
   dependencies:
     "@discordjs/collection" "^0.1.6"
     "@discordjs/form-data" "^3.0.1"
     abort-controller "^3.0.0"
     node-fetch "^2.6.1"
-    prism-media "^1.2.2"
+    prism-media "^1.2.9"
     setimmediate "^1.0.5"
     tweetnacl "^1.0.3"
-    ws "^7.3.1"
+    ws "^7.4.4"
 
 doctrine@^3.0.0:
   version "3.0.0"
@@ -851,9 +851,9 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz"
 
-prism-media@^1.2.2:
-  version "1.2.7"
-  resolved "https://registry.npmjs.org/prism-media/-/prism-media-1.2.7.tgz"
+prism-media@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/prism-media/-/prism-media-1.2.9.tgz#8d4f97b36efdfc82483eb8d3db64020767866f36"
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
@@ -1118,9 +1118,9 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz"
 
-ws@^7.3.1:
-  version "7.4.3"
-  resolved "https://registry.npmjs.org/ws/-/ws-7.4.3.tgz"
+ws@^7.4.4:
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.4.tgz#383bc9742cb202292c9077ceab6f6047b17f2d59"
 
 yallist@^4.0.0:
   version "4.0.0"
