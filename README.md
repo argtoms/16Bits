@@ -18,13 +18,15 @@
 
 The Bot Uses:
 
-[`Discord.js`](discord.js.org/) - Used To Interact With Discord API Very Easily
+[`Discord.js`](discord.js.org/) - Used To Interact With Discord API Very Easily.
 
-[`Node.js`](https://nodejs.org/) And [`Yarn`](https://classic.yarnpkg.com/en/) - Runtime Engine For Running The Bot
+[`Node.js`](https://nodejs.org/) And [`Yarn`](https://classic.yarnpkg.com/en/) - Runtime Engine For Running The Bot.
 
-[`Some Random API`](https://some-random-api.ml/) - For The Animal Photos And Facts Commands
+[`Some Random API`](https://some-random-api.ml/) - For The Animal Photos And Facts Commands.
 
-[`Mongo DB Atlas`](https://www.mongodb.com/cloud/atlas) - For Storing Warns Of Members
+[`NekoBot API`](https://docs.nekobot.xyz) - For `Trump Tweet` Image Command.
+
+[`Mongo DB Atlas`](https://www.mongodb.com/cloud/atlas) - For Storing Warns Of Members.
 
 # Self Hosting 16Bits
 
@@ -53,5 +55,3 @@ Read [CONTRIBUTING.md](https://github.com/pixdevgithub/16Bits/blob/main/CONTRIBU
 [@SahalDev](https://github.com/SahalDev)
 
 ### Read The [CHANGELOG](https://github.com/pixdevgithub/16Bits/blob/main/CHANGELOG.md) For Information About Each Version
-
-### The Bot Repository Is Also Available On [GitLab](https://gitlab.com/SahalDev/16Bits).
