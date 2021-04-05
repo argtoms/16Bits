@@ -281,9 +281,9 @@ diff@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/diff/-/diff-5.0.0.tgz"
 
-discord.js@^12.5.2:
-  version "12.5.2"
-  resolved "https://registry.yarnpkg.com/discord.js/-/discord.js-12.5.2.tgz#7a81c39d11b56747656c60127709ee9dfa3119bf"
+discord.js@^12.5.3:
+  version "12.5.3"
+  resolved "https://registry.yarnpkg.com/discord.js/-/discord.js-12.5.3.tgz#56820d473c24320871df9ea0bbc6b462f21cf85c"
   dependencies:
     "@discordjs/collection" "^0.1.6"
     "@discordjs/form-data" "^3.0.1"
