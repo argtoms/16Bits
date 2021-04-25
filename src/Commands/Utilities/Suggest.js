@@ -1,5 +1,7 @@
+/* eslint-disable camelcase */
 const { MessageEmbed } = require('discord.js');
 const Command = require('../../Structures/Command');
+const config = require('../../../config.json');
 
 module.exports = class extends Command {
 
@@ -17,7 +19,8 @@ module.exports = class extends Command {
 
 	// eslint-disable-next-line consistent-return
 	async run(message, args) {
-		const neededChannel = '814420784838737930';
+		const { suggest_channel_id } = config;
+		const neededChannel = suggest_channel_id;
 
 		const channel = this.client.channels.cache.get(neededChannel);
 

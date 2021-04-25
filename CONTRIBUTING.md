@@ -79,16 +79,7 @@ To Run 16Bits
 
 5. Install The Required Packages By Doing `npm i` And Start The Bot Using `node .`
 
-6. Add The Channel ID In Line 20 Of src/Commands/Utilities/Suggest.js Show Below
-
-```javascript
-const neededChannel = '814420784838737930'; 
-
-```
-
-Change The Existing ID To A Channel Where You Want The Suggestions To Be Sent
-
-7. Change The Role, Channel ID And Text At src/Events/guild/guildMemberAdd.js
+6. Change The Role, Channel ID And Text At src/Events/guild/guildMemberAdd.js
 
 Line 6:82 - Change The `RoleName` To Your Role Name
 ```javascript
