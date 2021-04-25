@@ -1,7 +1,10 @@
+/* eslint-disable camelcase */
 const Event = require('../../Structures/Event');
 const SixteenEmbed = require('../../Structures/SixteenEmbed');
 const { Util: { escapeMarkdown } } = require('discord.js');
 const { diffWordsWithSpace } = require('diff');
+const config = require('../../../config.json');
+
 
 module.exports = class extends Event {
 
@@ -22,7 +25,8 @@ module.exports = class extends Event {
 				.map(result => result.added ? `**${result.value}**` : result.removed ? `~~${result.value}~~` : result.value)
 				.join(' '));
 
-		const channel = message.guild.channels.cache.find(ch => ch.name === 'logs');
+		const { logs_channel_name } = config;
+		const channel = message.guild.channels.cache.find(ch => ch.name === logs_channel_name);
 		if (channel) channel.send(embed);
 	}
 

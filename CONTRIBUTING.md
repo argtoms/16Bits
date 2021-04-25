@@ -64,7 +64,7 @@ To Run 16Bits
 
 3. Download The Latest [Release](https://github.com/pixdevgithub/16Bits/releases) Or Clone The Repo By Doing (You Need Git Installed) `https://github.com/pixdevgithub/16Bits.git`
 
-4. Make A File Named `config.json` And Fill It Up With The Content Given Below.
+4. Make A Copy Of `config.example.json` And Rename To `config.json` And Fill It Up With The Content Given Below.
 
 ```json 
 {
@@ -77,7 +77,8 @@ To Run 16Bits
     "suggest_channel_id": "", // Channel ID For Where The Suggestions Should Be Sent
     "welcome_role_name": "", // Role Name For The Role You Want The Bot To Give When A New Member Joins Your Server.
     "welcome_channel_id": "", // Channel ID For Where The Welcome Message Should Be Sent
-    "welcome_message": "Hello There And Welcome To The Server!" // Welcome Message
+    "welcome_message": "Hello There And Welcome To The Server!", // Welcome Message
+    "logs_channel_name": "" // Channel Name For The Channel You Want Logs To Be Sent
 }
 ```
 

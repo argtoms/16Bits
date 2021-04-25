@@ -1,5 +1,7 @@
+/* eslint-disable camelcase */
 const Event = require('../../Structures/Event');
 const SixteenEmbed = require('../../Structures/SixteenEmbed');
+const config = require('../../../config.json');
 
 module.exports = class extends Event {
 
@@ -20,7 +22,8 @@ module.exports = class extends Event {
 			embed.splitFields(`**- Deleted Message:** ${message.content}`);
 		}
 
-		const channel = message.guild.channels.cache.find(ch => ch.name === 'logs');
+		const { logs_channel_name } = config;
+		const channel = message.guild.channels.cache.find(ch => ch.name === logs_channel_name);
 		if (channel) channel.send(embed);
 	}
 
