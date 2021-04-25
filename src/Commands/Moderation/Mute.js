@@ -1,5 +1,7 @@
+/* eslint-disable camelcase */
 const { MessageEmbed } = require('discord.js');
 const Command = require('../../Structures/Command');
+const config = require('../../../config.json');
 
 module.exports = class extends Command {
 
@@ -37,9 +39,10 @@ module.exports = class extends Command {
 			return message.channel.send('Please Give A Reason To Mute The Person!');
 		}
 
+		const { muted_role_name } = config;
 
 		// eslint-disable-next-line id-length
-		const muterole = message.guild.roles.cache.find(x => x.name === 'Muted');
+		const muterole = message.guild.roles.cache.find(x => x.name === muted_role_name);
 
 		if (!muterole) {
 			// eslint-disable-next-line no-useless-escape
