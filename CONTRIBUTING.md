@@ -73,22 +73,14 @@ To Run 16Bits
     "owners": [""], // Discord ID(s) For The Owners.
     "defaultPerms": ["SEND_MESSAGES", "VIEW_CHANNEL", "SPEAK"], // Default Permissions Needed For The Users To Use The Bot.
     "mongo_url": "", // MongoDB Connection Url.
-    "muted_role_name": "Muted" // Role Name For Muted Role
+    "muted_role_name": "Muted", // Role Name For Muted Role
+    "suggest_channel_id": "", // Channel ID For Where The Suggestions Should Be Sent
+    "welcome_role_name": "", // Role Name For The Role You Want The Bot To Give When A New Member Joins Your Server.
+    "welcome_channel_id": "", // Channel ID For Where The Welcome Message Should Be Sent
+    "welcome_message": "Hello There And Welcome To The Server!" // Welcome Message
 }
 ```
 
 5. Install The Required Packages By Doing `npm i` And Start The Bot Using `node .`
-
-6. Change The Role, Channel ID And Text At src/Events/guild/guildMemberAdd.js
-
-Line 6:82 - Change The `RoleName` To Your Role Name
-```javascript
-const welcomeRole = guildMemberAdd.guild.roles.cache.find(role => role.name === 'RoleName');
-```
-
-Line 9:50 And 9:69 - On `9:50` Add The ChannelID For Channel Your Welcome Message To Be Sent In And On `9:68` Change The Welcome Message
-```javascript
-guildMemberAdd.guild.channels.cache.get('CHANNELID').send(`Welcome <@${guildMemberAdd.user.id}> To The Server!`);
-```
 
 ### 16Bits Official Color Code = ```#544B94```
