@@ -77,7 +77,6 @@ To Run 16Bits
     "suggest_channel_id": "", // Channel ID For Where The Suggestions Should Be Sent
     "welcome_role_name": "", // Role Name For The Role You Want The Bot To Give When A New Member Joins Your Server.
     "welcome_channel_id": "", // Channel ID For Where The Welcome Message Should Be Sent
-    "welcome_message": "Hello There And Welcome To The Server!", // Welcome Message
     "logs_channel_name": "" // Channel Name For The Channel You Want Logs To Be Sent
 }
 ```
