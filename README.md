@@ -14,7 +14,7 @@
 
 </div>
 
-16Bits Is A Discord Bot Made By [SahalDev](https://github.com/SahalDev) For pixelDev's [Discord Server](https://discord.gg/syPv4ezZEM)
+16Bits Is A Discord Bot Made By [SahalDev](https://github.com/SahalDev) For [pixelDev's](https://github.com/pixdevgithub) [Discord Server](https://discord.gg/syPv4ezZEM)
 
 The Bot Uses:
 
