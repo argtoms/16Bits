@@ -30,7 +30,7 @@ The Bot Uses:
 
 # Self Hosting 16Bits
 
-You Are Free To Self Host The Bot. Just Credit The Repo Or The `SahalDev` Name In Any Form.
+You Are Free To Self Host The Bot. No Need Of Crediting Or Anything Like That. After All, This Is Open Source ¯\_(ツ)_/¯
 
 This Bot Doesn't Have Any Official Bot Application Other Than The One In [pixelDev Discord Server](http://link.pixdev.gq/discord) Because 16Bits Is Meant To Be A Guild Bounded Bot. You Can Modify And Use It On Multiple Servers....
 
