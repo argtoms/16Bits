@@ -21,3 +21,7 @@ Server Information Command Fix
 # [1.0.4](https://github.com/pixdevgithub/16Bits/releases/tag/v1.0.4) | 11/03/21
 
 Guild Member Add Event With Welcome Message And Auto Role
+
+# [1.5.0](https://github.com/SahalDev/16Bits/releases/tag/v1.5.0) | 16/05/21
+
+Quality Of Life Changes.
