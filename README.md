@@ -1,3 +1,11 @@
+# Update!
+
+## This Project Is Now Deprecated And Won't Be Worked On From Now On. 
+## Feel Free To Use The Code In Any Way
+## The Repo Will Be Archived...
+
+----------------------------------------------------------------------------
+
 # <div align="center">**_16Bits_**
     
 <div align="center">
